@@ -7,3 +7,5 @@ export const ShoppingList = [
   "carrot",
   "cucumber",
 ];
+
+// array isimlerimni kucuk harf ile baslat

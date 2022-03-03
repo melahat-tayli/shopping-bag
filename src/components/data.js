@@ -16,3 +16,5 @@ export const DataArray = () => {
   }
   return data;
 };
+
+// DataArray dataArray olarar degistir. <DataArray/> oalrak kullanamaycaksan kucuk har kullan

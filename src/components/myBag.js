@@ -20,3 +20,5 @@ export const MyBag = () => {
   }
   return bag;
 };
+
+// for loob yerine map dene

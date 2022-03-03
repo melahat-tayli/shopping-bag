@@ -35,6 +35,7 @@ export const Cards = () => {
   return (
     <div>
       {indexes.map((index) => {
+    // index diye degisken ismi kullanmaktan kacin muzIndex yada itemIndex diye bilirisin.  map uc tane sey alir icine  items.map(item,index) bu nedenle index ismini verme
         return (
           <Card
             url={folderUrl + fileUrls[index]}

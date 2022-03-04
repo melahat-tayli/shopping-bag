@@ -1,19 +1,19 @@
 import { MyBag } from "./myBag";
 
 /*Card component will return an image of shopping list item, name and amount. It takes url, name and amount as parameters*/
-export const Card = (props) => {
+export const Card = ({ name, amount, url }) => {
   return (
     <div>
       <div>
         <img
           alt="shopping-list-item"
-          src={props.url} //images are in public directory but this is the way it works
+          src={url} //images are in public directory but this is the way it works
           style={{ height: "80px" }}
         />
       </div>
       <div>
         <p>
-          {props.name} <span>{props.amount}</span>
+          {name} <span>{amount}</span>
         </p>
       </div>
     </div>

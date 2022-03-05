@@ -3,8 +3,8 @@ import { MyBag } from "./myBag";
 /*Card component will return an image of shopping list item, name and amount. It takes url, name and amount as parameters*/
 export const Card = ({ name, amount, url }) => {
   return (
-    <div>
-      <div>
+    <div className="card">
+      <div className="card-image-section">
         <img
           alt="shopping-list-item"
           src={url} //images are in public directory but this is the way it works
@@ -12,8 +12,8 @@ export const Card = ({ name, amount, url }) => {
         />
       </div>
       <div>
-        <p>
-          {name} <span>{amount}</span>
+        <p className="card-product-name">
+          {name} : <span>{amount} pounds </span>
         </p>
       </div>
     </div>
@@ -34,7 +34,7 @@ export const Cards = () => {
   ];
   let element_indexes = Array.from(Array(fileUrls.length).keys());
   return (
-    <div>
+    <>
       {element_indexes.map((element_index) => {
         return (
           <Card
@@ -44,6 +44,6 @@ export const Cards = () => {
           />
         );
       })}
-    </div>
+    </>
   );
 };

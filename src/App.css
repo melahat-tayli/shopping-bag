@@ -45,6 +45,17 @@ body {
   );
 }
 
+.delete-button-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.delete-button {
+  width: 25%;
+  border-radius: 25px;
+  align-self: flex-end;
+}
+
 .card {
   display: grid;
   grid-template-rows: 80% 20%;
@@ -58,10 +69,18 @@ body {
 .card-product-name {
   margin: 0;
   text-align: center;
+  font-size: 14px;
 }
 
 .card-image-section {
   display: grid;
   justify-content: center;
   align-content: center;
+}
+
+img {
+  /* To make the images flexible,
+   simply add max-width:100% and height:auto*/
+  max-width: 100%;
+  height: auto;
 }

@@ -5,7 +5,7 @@ export const Header = () => {
       <input
         className="header-search-bar"
         type={"text"}
-        placeholder={"Saerch"}
+        placeholder={"Search"}
       ></input>
     </div>
   );
